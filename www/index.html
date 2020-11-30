@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy"
+        content="script-src 'self' http://* 'unsafe-inline' 'unsafe-eval';media-src 'self' http://* 'unsafe-inline' unsafe-eval;">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <script src="components/loader.js"></script>
+  <script src="lib/onsenui/js/onsenui.min.js"></script>
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYYsY9XEfEYeZf38uffQhZeiN5uLYWeGs&callback=initMap">
+</script>
+
+  <script type="text/javascript" src="js/maps.js"></script>
+</head>
+
+<body>
+  <ons-page>
+    <ons-toolbar>
+        <div style="text-align: center;" class="toolbar__center toolbar--material__center">
+            Google Maps
+        </div>
+      </ons-toolbar>
+    <div style="text-align: center;height: 100%;">
+        <div id="map" style="display: block;"></div>
+    </div>
+
+</ons-page>
+
+</body>
+
+</html>
